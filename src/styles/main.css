@@ -42,6 +42,10 @@ table {
   border-spacing: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 .title{
   float: left;
   width: 100%;
@@ -78,6 +82,7 @@ table {
   transition: .3s linear;
   color: #fff;
   background: #3535f0;
+  font-size: 14px;
   cursor: pointer;
 }
 .btn:hover{

@@ -12,6 +12,7 @@
       </div>
       <div class="buttons">
         <button class="btn" @click="toTest()">Начать тест</button>
+        <router-link class="btn" to="/">На главную</router-link>
       </div>
     </section>
     <section class="test" v-if="inTest">
@@ -21,7 +22,7 @@
       <div class="buttons">
         <button class="btn" @click="startStep()">Запуск</button>
         <button class="btn" v-if="isAnswerButtonShown" @click="showAnswer()">Ответ</button>
-        <button class="btn" @click="toMenu()">В меню</button>
+        <button class="btn" @click="toMenu()">В меню теста</button>
       </div>
       <div v-if="isAnswerShown" class="answers">
         <div v-if="isAnswerArray" v-for="item in answer" class="answer">{{ item }}</div>
@@ -39,10 +40,10 @@ export default {
     return {
       elem: 'X',
       testSteps: 5,
-      cycleSteps: 20,
+      cycleSteps: 17,
       numberOfNumbers: 0,
       maxNumbers: 2,
-      delay: 150,
+      delay: 120,
       symbols: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
       inMenu: true,
       inTest: false,

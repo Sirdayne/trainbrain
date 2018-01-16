@@ -46,6 +46,33 @@ a{
   text-decoration: none;
 }
 
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #323232;
+}
+
+.header-menu{
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.header-menu-link{
+  display: inline-block;
+  font-size: 16px;
+  transition: .3s linear;
+  color: #323232;
+}
+.header-menu-link:hover{
+  color: #3535f0;
+  text-decoration: underline;
+}
+
+
 .title{
   float: left;
   width: 100%;

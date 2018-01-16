@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import TestCountNumbers from '@/pages/TestCountNumbers'
 import MainPage from '@/pages/MainPage'
 
